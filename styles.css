@@ -12,7 +12,7 @@ body {
 
 html {
     
-    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background-color: ;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
     background: rgb(69,72,77); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -39,7 +39,7 @@ a {
     width: 100%;
     padding: 10px;
     
-    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background-color: ;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
     background: rgb(69,72,77); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -292,7 +292,7 @@ a {
     position: relative;
     height: 30px;
     width: 100%;
-    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background-color: ;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
     background: rgb(69,72,77); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -470,7 +470,7 @@ a {
     height: 100%;
     width: 100%;
     bottom: -595px;
-    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background-color: ;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
     background: rgb(69,72,77); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -652,7 +652,7 @@ a {
     height: 100%;
     width: 100%;
     bottom: -495px;
-    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background-color: ;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
     background: rgb(69,72,77); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -873,7 +873,6 @@ a {
     
   
  #home {
-    
     display: block;
     width: 100%;
     height: 100vh;
@@ -886,6 +885,7 @@ a {
     height: auto; /* Maintain the image's aspect ratio */
     opacity: 0.67; /* Note: The opacity value should be between 0 and 1 (e.g., 0.67 instead of 67%) */
     top: -25.2%;
+    margin-top: 40px;
 }
 
 .me {
@@ -908,10 +908,8 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    bottom: 490px;
-    padding: 5px;
+    bottom: 350px;
     background-image: url(images/bg2.png);
-    overflow: hidden;
 }
 
 .boxes-container {
@@ -925,13 +923,12 @@ a {
     width: 90%;
     left: -2.3%;
     color: antiquewhite;
-    
 }
 
 .box {
     
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -949,20 +946,13 @@ a {
 
 }
 
-#actor {
-    
-    position: relative;
-    left: 30%;
-    top: -30px;
-    }
-
 #contact {
     
     display: inline-block;
     position: absolute;
     height: 90%;
     width: 100%;
-    bottom: -135%;
+    bottom: -114%;
     background-image: url(images/bgcontact.png);
     background-repeat: no-repeat;
     overflow: hidden;

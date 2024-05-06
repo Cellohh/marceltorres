@@ -1052,22 +1052,23 @@ a {
         justify-content: center;
         align-items: center;
         position: fixed;
-        width: 105vw;
+        width: 99%;
     }
   
     #home {
       display: block;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100v%;
       overflow: hidden;
     }   
       
     .cello-container img {
       position: relative;
-      width: 100vw; 
+      width: 100%; 
       height: auto; 
       opacity: 0.67; 
-      top: -29.2%;
+      top: -30.5%;
+      right: 2%;
       margin-top: 43px;
     }
   
@@ -1076,9 +1077,9 @@ a {
       flex-direction: column;
       position: relative;
       top: -77%;
-      left: 50%;
+      left: 47%;
       transform: translateX(-50%);
-      font-size: 1.2em; /* Adjusted font size for smaller screens */
+      font-size: 1.0em; /* Adjusted font size for smaller screens */
       color: antiquewhite;
       text-shadow: 2px 2px 5px black;
       z-index: 1;
@@ -1090,7 +1091,7 @@ a {
       position: relative;
       width: 100%;
       height: 100%;
-      bottom: 390px;
+      bottom: 425px;
       background-image: url(images/bg2.png);
     }
   
@@ -1098,17 +1099,17 @@ a {
       display: flex;
       position: relative;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       height: auto;
       width: 90%;
-      left: 2.3%;
+      left: -3.3%;
       color: antiquewhite;
     }
   
     .box {
-      width: 140px; /* Adjusted width for smaller screens */
-      height: 140px; /* Adjusted height for smaller screens */
+      width: 100px; /* Adjusted width for smaller screens */
+      height: 100px; /* Adjusted height for smaller screens */
       margin: 10px;
       display: flex;
       justify-content: center;
@@ -1129,7 +1130,7 @@ a {
       position: absolute;
       height: 90%;
       width: 100%;
-      bottom: -130%;
+      bottom: -100%;
       background-image: url(images/bgcontact.png);
       background-repeat: no-repeat;
       overflow: hidden;
@@ -1147,20 +1148,19 @@ a {
       position: relative;
       max-width: 100%;
       max-height: 100%;
-      left: 2%;
+      left: 1%;
       opacity: 95%;
     }
   
     #email {
       position: relative;
       display: inline-block;
-      font-size: 1em; /* Adjusted font size for smaller screens */
+      font-size: 1.1em; 
       color: antiquewhite;
       bottom: 97%;
-      max-width: 100%;
+      max-width: 80%;
       max-height: 50%;
-      margin-right: 1%;
-      padding-left: 8%; /* Adjusted padding for smaller screens */
+      padding-left: 5%; /* Adjusted padding for smaller screens */
       opacity: 95%;
       z-index: 2;
     }
@@ -1168,6 +1168,7 @@ a {
     #email a {
       color: #41aa61; 
       text-decoration: none;
+      word-wrap: break-word;
       cursor: pointer;
     }
   
@@ -1186,7 +1187,7 @@ a {
       position: relative;
       height: 100%;
       width: 100%;
-      bottom: -185px;
+      bottom: -165px;
       background-color: rgb(69,72,77);
       overflow: hidden;
       color: antiquewhite;
@@ -1195,7 +1196,7 @@ a {
   
     #copyright {
       width: 100%;
-      right: 170px;
+      right: 140px;
       text-align: center;
       color: antiquewhite;
       z-index: 1;

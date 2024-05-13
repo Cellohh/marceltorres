@@ -133,3 +133,28 @@ section {
     padding: 1px;
   }
   
+
+
+  /* ---------------- Mobile ---------------*/
+
+  @media (max-width: 576px) {
+    .full-body-container {
+      position: relative;
+      width: 95%;
+      top: 10%; /* Adjust the top percentage as needed */
+      left: 10%; /* Adjust the left percentage as needed */
+    }
+
+    #jack {
+    
+      position: relative;
+      display: inline-block;
+      bottom: 50px;
+      max-width: 85%;
+      max-height: 100%;
+      margin-left: 9%;
+      opacity: 95%;
+    }
+
+  }
+  

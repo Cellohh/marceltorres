@@ -41,7 +41,7 @@ html {
       font-weight: bolder;
       font-size: 4.7rem;
       color: whitesmoke;
-      padding-top: 22%; /* Adjust the value as needed to move the h1 down */
+      padding-top: 22%;
       text-shadow: 
       -1px -1px 0 #000, /* Top-left shadow */
        1px -1px 0 #000, /* Top-right shadow */
@@ -85,8 +85,8 @@ html {
   }
   
   #work .container {
-    padding-left: 15px; /* Adjust as needed to move the boxes to the left */
-    padding-right: 150px; /* Adjust as needed to maintain spacing */
+    padding-left: 15px; 
+    padding-right: 150px; 
   }
   
   #email a {
@@ -109,8 +109,8 @@ html {
   .full-body-container {
     position: absolute;
     width: 45%;
-    top: -10%; /* Adjust the top percentage as needed */
-    left: 30%; /* Adjust the left percentage as needed */
+    top: -10%;
+    left: 30%; 
   }
   
   #jack {
@@ -141,8 +141,8 @@ html {
       .full-body-container {
         position: relative;
         width: 95%;
-        top: 10%; /* Adjust the top percentage as needed */
-        left: 10%; /* Adjust the left percentage as needed */
+        top: 10%; 
+        left: 10%; 
       }
   
       #jack {
@@ -154,6 +154,13 @@ html {
         max-height: 100%;
         margin-left: 9%;
         opacity: 95%;
+      }
+
+      #me {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+      }
+      #mt {
+        font-size: 0.7rem; /* Adjust the font size for smaller screens */
       }
   
     }

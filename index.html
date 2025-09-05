@@ -156,28 +156,36 @@
               Contact me
             </div>
 
-            <!-- Contact Form (visible and animated) -->
-            <form id="contact-form" style="margin-top: 20px;"
-              action="https://formsubmit.co/396d01081ec5ebc09648cce9b8140ea4" method="POST" data-aos="fade-up"
-              data-aos-duration="1000">
+            <form id="contact-form" style="margin-top: 20px;" action="https://api.web3forms.com/submit" method="POST"
+              data-aos="fade-up" data-aos-duration="1000">
 
-              <input type="hidden" name="_captcha" value="true" />
-              <input type="hidden" name="_next" value="https://marceltorres.com/thank-you.html" />
+              <!-- Required: Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="7c36adf3-19cc-4369-8593-1e086d8b5c3b">
+
+              <!-- Optional: Honeypot (anti-spam) -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
               <div class="form-group">
                 <label for="name" style="color: #fff;">Name</label>
                 <input type="text" class="form-control" name="name" id="name" required>
               </div>
+
               <div class="form-group">
                 <label for="emailField" style="color: #fff;">Email</label>
                 <input type="email" class="form-control" name="email" id="emailField" required>
               </div>
+
               <div class="form-group">
                 <label for="message" style="color: #fff;">Message</label>
                 <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
               </div>
+
               <button type="submit" class="btn btn-primary">Send</button>
             </form>
+
+            <!-- Success/Error Message Placeholder -->
+            <div id="form-result" style="margin-top: 15px; display: none;"></div>
+
           </div>
 
           <div class="col-lg-6 text-center">
@@ -190,14 +198,10 @@
       </div>
     </section>
 
-
-
-
-
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p class="pt-2">&copy; 2024 Marcel 'Cello' Torres. All rights reserved.</p>
+        <p class="pt-2">&copy; 2025 Marcel 'Cello' Torres. All rights reserved.</p>
       </div>
     </footer>
 
@@ -212,6 +216,58 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      const form = document.getElementById("contact-form");
+      const result = document.getElementById("form-result");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        // Show "Sending..."
+        result.style.display = "block";
+        result.className = "alert alert-info fade show";
+        result.innerHTML = "📨 Sending...";
+
+        try {
+          const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json"
+            },
+            body: json
+          });
+
+          const data = await res.json();
+
+          if (res.ok && data.success) {
+            result.className = "alert alert-success fade show";
+            result.innerHTML = "✅ Thank you for reaching out, I will contact you shortly! ✌";
+            form.reset();
+          } else {
+            result.className = "alert alert-danger fade show";
+            result.innerHTML = "❌ Oops! Something went wrong. Please try again.";
+          }
+        } catch (error) {
+          result.className = "alert alert-danger fade show";
+          result.innerHTML = "❌ Error: Unable to send message.";
+        }
+
+        // Auto-hide message after 6 seconds
+        setTimeout(() => {
+          result.classList.remove("show");
+          setTimeout(() => {
+            result.style.display = "none";
+          }, 300); // wait for fade to finish
+        }, 6000);
+      });
+    </script>
+
 
 
   </body>

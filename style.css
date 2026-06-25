@@ -14,9 +14,15 @@ section {
   padding-bottom: 50px; /* Adjust as needed */
 }
 
-#intro, #work {
+ #intro, #about, #work {
   position: relative;
   text-align: center;
+}
+
+#about {
+  min-height: 10vh;
+  padding: 100px 0;
+  text-align: left;
 }
 
 /* Keep overlays only on intro and work, no overlay on contact to avoid blocking */
@@ -52,10 +58,14 @@ section {
   border-radius: 10px;
 }
 
+#hello {
+  padding-top: 100px;
+}
+
 #me {
   font-weight: bolder;
   font-size: 4.7rem;
-  color: whitesmoke;
+  color: #F9F6EE;
   padding-top: 22%; /* Adjust as needed */
   text-shadow: 
     -1px -1px 0 #000,
@@ -65,13 +75,31 @@ section {
 }
 
 #mt { 
-  color: #008080;
-  left: -1.5%;
+  color: #F9F6EE;
   text-shadow: 
     -1px -1px 0 #000,
      1px -1px 0 #000,
     -1px  1px 0 #000,
      5px  1px 0 #000;
+}
+
+#about h2 {
+    color: #F9F6EE;
+  text-shadow: 
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     5px  1px 0 #000;
+     
+}
+
+#about p {
+    font-size: large;
+  color: #F9F6EE;
+
+     background: rgba(0, 0, 0, 0.95); /* optional: makes form area easier to read */
+     padding: 20px;
+     border-radius: 10px;
 }
 
 .work-link {
@@ -141,7 +169,6 @@ section {
 footer {
   display: inline-block;
   position: relative;
-  background-color: #333;
   color: white;
   text-align: center;
   padding: 1px;

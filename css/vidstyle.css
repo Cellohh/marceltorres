@@ -1,0 +1,35 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+}
+
+.video-card:hover .overlay {
+    opacity: 1;
+}
+
+.grain-bg {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAxeeGT88iGmIqHQibVZI1pssaCP4z-0AtWGJGzIOBERYH6tTduO2e6HMMuRBBSRixCuqMVKJBb7xCmJSPL3rTypdWa2ewsMHphqqoCV9mA0thBVtoqQzdfZjyDufjbH9_NnFX34jvq5z5W7vkHLuAC70auZTGprSMthfpY3whhA1-XYkiaSGyUw7BzP0vS2vre8uO50JIsWcHgDo-ALlxDMtYnHecAoZS9YnHOv1mOn0pFxFFxi49Deq3Rx_4uSOhUbLaSjbEmm0");
+    filter: contrast(150%) brightness(1000%);
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #282828;
+    border-radius: 3px;
+}
+
+.transition-cine {
+    transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}

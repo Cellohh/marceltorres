@@ -1,0 +1,35 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+}
+
+.role-card:hover .overlay {
+    opacity: 1;
+}
+
+.grain-bg {
+    background-image: url("/images/actor/bgActor.jpg");
+    filter: contrast(150%) brightness(1000%);
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #282828;
+    border-radius: 3px;
+}
+
+.transition-cine {
+    transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}

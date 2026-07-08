@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMF8J334GV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-LMF8J334GV');
+        </script>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>CELLO | Actor Portfolio</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@100..900&family=Inter:wght@100..900&family=Space+Mono:wght@100..900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="css/actorstyle.css">
+
+        <!-- Tailwind Configuration -->
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "on-tertiary-fixed-variant": "#594400",
+                            "primary": "#c3f5ff",
+                            "surface-dim": "#131313",
+                            "on-secondary-fixed": "#291800",
+                            "outline-variant": "#3b494c",
+                            "on-surface": "#e5e2e1",
+                            "on-tertiary": "#3e2e00",
+                            "surface-bright": "#3a3939",
+                            "tertiary-fixed-dim": "#f3bf26",
+                            "on-secondary-container": "#684300",
+                            "on-surface-variant": "#bac9cc",
+                            "primary-fixed": "#9cf0ff",
+                            "surface": "#131313",
+                            "on-primary-fixed-variant": "#004f58",
+                            "tertiary-fixed": "#ffdf96",
+                            "error": "#ffb4ab",
+                            "error-container": "#93000a",
+                            "inverse-surface": "#e5e2e1",
+                            "surface-container-highest": "#353534",
+                            "on-background": "#e5e2e1",
+                            "secondary-fixed-dim": "#ffb950",
+                            "on-error": "#690005",
+                            "outline": "#849396",
+                            "secondary-container": "#feaa00",
+                            "on-primary-container": "#00626e",
+                            "tertiary-container": "#fec931",
+                            "surface-container": "#201f1f",
+                            "surface-container-low": "#1c1b1b",
+                            "surface-tint": "#00daf3",
+                            "inverse-primary": "#006875",
+                            "on-error-container": "#ffdad6",
+                            "on-tertiary-fixed": "#251a00",
+                            "on-secondary": "#452b00",
+                            "inverse-on-surface": "#313030",
+                            "secondary-fixed": "#ffddb3",
+                            "primary-container": "#00e5ff",
+                            "on-primary": "#00363d",
+                            "on-tertiary-container": "#6f5500",
+                            "on-secondary-fixed-variant": "#624000",
+                            "surface-variant": "#353534",
+                            "primary-fixed-dim": "#00daf3",
+                            "tertiary": "#ffeac0",
+                            "secondary": "#ffcf8f",
+                            "on-primary-fixed": "#001f24",
+                            "surface-container-high": "#2a2a2a",
+                            "surface-container-lowest": "#0e0e0e",
+                            "background": "#131313"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "margin-mobile": "20px",
+                            "gutter": "24px",
+                            "margin-desktop": "64px",
+                            "container-max": "1440px",
+                            "section-gap": "128px",
+                            "unit": "8px"
+                        },
+                        "fontFamily": {
+                            "headline-md": ["Archivo Narrow"],
+                            "display-xl-mobile": ["Archivo Narrow"],
+                            "headline-lg": ["Archivo Narrow"],
+                            "display-xl": ["Archivo Narrow"],
+                            "label-sm": ["Space Mono"],
+                            "body-lg": ["Inter"],
+                            "body-md": ["Inter"]
+                        },
+                        "fontSize": {
+                            "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                            "display-xl-mobile": ["48px", { "lineHeight": "1.1", "fontWeight": "700" }],
+                            "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                            "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                            "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                        }
+                    },
+                },
+            }
+        </script>
+
+    </head>
+
+    <body class="bg-background text-on-surface font-body-md selection:bg-primary selection:text-on-primary">
+        <div class="fixed inset-0 grain-bg z-[60]"></div>
+        <!-- TopNavBar -->
+        <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30">
+            <div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+                <div class="font-headline-md text-headline-md tracking-tighter text-primary">CELLO. ACTOR.
+                </div>
+                <!-- Navigation Desktop -->
+                <div class="hidden md:flex gap-12 font-label-sm text-label-sm tracking-widest items-center">
+                    <a class="text-primary border-b border-primary pb-1" href="#work">WORK</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors" href="#about">ABOUT</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors"
+                        href="index.html#contact">CONTACT</a>
+                </div>
+
+            </div>
+        </nav>
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-screen flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <div class="w-full h-full bg-cover bg-center brightness-50"
+                        data-alt="Meridian standing under stage lighting mid-performance, caught in a dramatic pose"
+                        style="background-image: url('images/actor/myFrameActor.png')"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50">
+                    </div>
+                </div>
+                <div class="relative z-10 text-center px-margin-mobile">
+                    <h1 class="font-display-xl text-display-xl uppercase tracking-tighter leading-none mb-6">
+                        LIVING IN THE MOMENT
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 tracking-wide">
+                        Stage and screen work built on presence and truth. Bringing characters to life through
+                        instinct, discipline, and craft.
+                    </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                            <a href="https://youtu.be/Hr0zt27AkZs?si=J1ONTY4wE5SKZ9Ey" target="_blank"><button
+                                    class="bg-primary-container text-on-primary-container px-10 py-4 font-label-sm text-label-sm tracking-[0.2em] transition-cine hover:shadow-[0_0_20px_rgba(0,218,243,0.3)] border border-primary/20">
+                                    CHECK OUT MY REEL
+                                </button></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+                    <span class="material-symbols-outlined text-4xl">expand_more</span>
+                </div>
+            </section>
+            <!-- Featured Work (Roles Grid) -->
+            <section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="work">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+                    <div>
+                        <span
+                            class="font-label-sm text-label-sm text-primary tracking-widest block mb-4 uppercase">Selected
+                            Roles</span>
+                        <h2 class="font-headline-lg text-headline-lg tracking-tight uppercase">Featured Work</h2>
+                    </div>
+                    <div class="h-px flex-grow bg-outline-variant/30 mx-12 hidden md:block mb-4"></div>
+                    <!-- <div class="font-label-sm text-label-sm text-on-surface-variant">2021—2024</div> -->
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <!-- Large Featured -->
+                    <div
+                        class="md:col-span-8 group relative overflow-hidden aspect-[21/9] bg-surface-container-low transition-cine role-card border border-outline-variant/20">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            data-alt="A production still of an actor delivering a monologue under a single stage spotlight."
+                            style="background-image: url('images/actor/tcWide.png')">
+                        </div>
+
+                        <div
+                            class="overlay absolute inset-0 bg-background/80 opacity-0 transition-cine flex flex-col justify-end p-8 backdrop-blur-sm">
+                            <span
+                                class="font-label-sm text-label-sm text-primary mb-2 uppercase tracking-widest">Feature
+                                Film</span>
+                            <h3 class="font-headline-md text-headline-md uppercase tracking-tight">Transatlantic Coffee
+                            </h3>
+
+                            <div class="mt-4 flex items-center gap-2 text-primary font-label-sm text-[10px]">
+                                <div class="mt-4 flex items-center gap-6">
+
+                                    <button type="button"
+                                        class="openModalBtn flex items-center gap-2 text-primary font-label-sm text-[10px]"
+                                        data-image="images/actor/tc.png">
+
+                                        <span>VIEW POSTER</span>
+                                        <span class="material-symbols-outlined !text-sm">
+                                            arrow_outward
+                                        </span>
+
+                                    </button>
+
+                                    <a href="https://www.amazon.com/gp/video/detail/B0FYZB4GM3?ref_=atv_dp_share_cu_r"
+                                        target="_blank"
+                                        class="flex items-center gap-2 text-primary font-label-sm text-[10px] hover:opacity-75 transition">
+
+                                        <span>Watch on Amazon Prime</span>
+
+                                        <span class="material-symbols-outlined !text-sm">
+                                            open_in_new
+                                        </span>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="imageModal" class="fixed inset-0 hidden items-center justify-center bg-black/80 z-50 p-4">
+                        <div class="relative max-w-5xl w-full">
+                            <button id="closeModalBtn" type="button"
+                                class="absolute -top-12 right-0 text-white text-3xl">&times;</button>
+                            <img id="modalImage" src="" alt="Preview"
+                                class="w-full h-auto max-h-[85vh] object-contain rounded-lg shadow-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Portrait/Tall Thumbnail -->
+                    <div
+                        class="md:col-span-4 group relative overflow-hidden aspect-[4/5] bg-surface-container-low transition-cine role-card border border-outline-variant/20">
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            data-alt="A character headshot in costume for a period drama television series."
+                            style="background-image: url('images/actor/promise.png')"></div>
+                        <div
+                            class="overlay absolute inset-0 bg-background/80 opacity-0 transition-cine flex flex-col justify-end p-8 backdrop-blur-sm">
+                            <span class="font-label-sm text-label-sm text-primary mb-2 uppercase tracking-widest">Feature Film</span>
+                            <h3 class="font-headline-md text-headline-md uppercase tracking-tight">A Promise of Tiem Travel
+                            </h3>
+                            <div class="mt-4 flex items-center gap-6">
+
+                                <button type="button"
+                                    class="openModalBtn flex items-center gap-2 text-primary font-label-sm text-[10px]"
+                                    data-image="images/actor/promise.png">
+
+                                    <span>VIEW POSTER</span>
+                                    <span class="material-symbols-outlined !text-sm">
+                                        arrow_outward
+                                    </span>
+
+                                </button>
+
+                                <a href="https://www.amazon.com/gp/video/detail/B0G3BHQ9H4?ref_=atv_dp_share_cu_r" target="_blank"
+                                    class="flex items-center gap-2 text-primary font-label-sm text-[10px] hover:opacity-75 transition">
+
+                                    <span>Watch on Amazon Prime</span>
+
+                                    <span class="material-symbols-outlined !text-sm">
+                                        open_in_new
+                                    </span>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section class="bg-surface py-section-gap" id="about">
+                <div
+                    class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                    <div class="order-2 lg:order-1">
+                        <span
+                            class="font-label-sm text-label-sm text-primary tracking-widest block mb-6 uppercase">Behind
+                            the character</span>
+                        <h2
+                            class="font-display-xl text-display-xl-mobile md:text-[64px] uppercase tracking-tighter mb-8 leading-none">
+                            Truth-Driven<br />Performance</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl">
+                            I love disappearing into a role. For years, I've brought characters to life across
+                            stage, screen, and voice work, chasing honesty and comedy in every choice. My process bridges the gap
+                            between technique and instinct, with a touch of vulnerability, ensuring every performance
+                            serves the story.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4
+                                    class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-4 border-b border-outline-variant pb-2 inline-block">
+                                    Range</h4>
+                                <ul class="space-y-4 font-body-md text-on-surface-variant">
+                                    <li class="flex items-center gap-3">
+                                        <span class="w-2 h-2 bg-primary"></span> Drama & Period Work
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span class="w-2 h-2 bg-primary"></span> Comedy & Improv
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span class="w-2 h-2 bg-primary"></span> Voiceover & Motion Capture
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-4 border-b border-outline-variant pb-2 inline-block">
+                                    Training</h4>
+                                <ul class="space-y-4 font-body-md text-on-surface-variant">
+                                    <li class="flex items-center gap-3">
+                                        <span class="w-2 h-2 bg-primary"></span> Meisner, Uta Hagen, and Method Acting
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span class="w-2 h-2 bg-primary"></span> Stage Combat & Movement
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span class="w-2 h-2 bg-primary"></span> Improv
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 relative group">
+                        <div
+                            class="absolute -top-6 -right-6 w-32 h-32 border-t border-r border-primary/40 transition-cine group-hover:translate-x-2 group-hover:-translate-y-2">
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -left-6 w-32 h-32 border-b border-l border-primary/40 transition-cine group-hover:-translate-x-2 group-hover:translate-y-2">
+                        </div>
+                        <div class="aspect-[4/5] bg-surface-container-highest overflow-hidden relative">
+                            <div class="w-full h-full bg-cover bg-center grayscale contrast-125 transition-transform duration-[2s] group-hover:scale-110"
+                                data-alt="A professional portrait of an actor in a dark studio. The subject is partially in silhouette, with a dramatic 'rim light' highlighting their profile. They are focused and present, with soft stage lighting catching their eyes. Cinematic, low-key, professional noir aesthetic."
+                                style="background-image: url('images/actor/meFrame.png')">
+                            </div>
+                            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact / Start Project -->
+            <section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="contact">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    <div class="lg:col-span-5">
+                        <span class="font-label-sm text-label-sm text-primary tracking-widest block mb-6 uppercase">Next
+                            Steps</span>
+                        <h2 class="font-headline-lg text-headline-lg uppercase tracking-tight mb-8">OPEN FOR NEW
+                            ROLES... kind of...</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                            I enjoy creating meaningful work. I retired from Hollywood and have shifted my focus into Documentary and Narrative film making on my own. I am bringing to life video game stories that no one else focuses on. If you are interested in working with me, reach out and we can talk. 
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <!-- <span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">hello@studio-x.com</span>
+</div> -->
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined text-primary">location_on</span>
+                                    <span class="font-label-sm text-label-sm uppercase tracking-widest"
+                                        data-location="Los Angeles, CA">Northern Florida / Remote</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-background border-t border-outline-variant/20 w-full py-section-gap">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center px-margin-desktop gap-8 max-w-container-max mx-auto">
+                <div class="font-headline-md text-headline-md text-on-surface">CELLO</div>
+                <div class="flex gap-10 font-label-sm text-label-sm">
+                    <a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-80 uppercase"
+                        href="https://www.youtube.com/@attackcancel" target="_blank">YouTube</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors opacity-100 hover:opacity-80 uppercase"
+                        href="https://www.imdb.com/name/nm2796641/?ref_=tt_ov_3_3" target="_blank">IMDb</a>
+                </div>
+                <div class="font-label-sm text-label-sm text-on-surface-variant/50">© 2026 CELLO. ALL RIGHTS
+                    RESERVED.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Reel Video Modal -->
+        <div id="videoModal" class="fixed inset-0 bg-black/90 flex items-center justify-center z-[999] hidden">
+
+            <div class="relative w-[90%] max-w-5xl">
+
+                <button id="closeVideo" class="absolute -top-12 right-0 text-white text-4xl hover:text-primary">
+                    &times;
+                </button>
+
+                <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
+
+                    <iframe id="youtubeVideo" class="absolute top-0 left-0 w-full h-full" src=""
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+            // Smooth scroll for nav links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Simple reveal on scroll interaction
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-cine', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+
+
+        </script>
+
+        <script>
+            const imageModal = document.getElementById("imageModal");
+            const modalImage = document.getElementById("modalImage");
+            const closeModalBtn = document.getElementById("closeModalBtn");
+
+            document.querySelectorAll(".openModalBtn").forEach(button => {
+                button.addEventListener("click", () => {
+                    modalImage.src = button.dataset.image;
+                    imageModal.classList.remove("hidden");
+                    imageModal.classList.add("flex");
+                });
+            });
+
+            function closeModal() {
+                imageModal.classList.add("hidden");
+                imageModal.classList.remove("flex");
+                modalImage.src = "";
+            }
+
+            closeModalBtn.addEventListener("click", closeModal);
+            imageModal.addEventListener("click", (e) => {
+                if (e.target === imageModal) closeModal();
+            });
+        </script>
+
+    </body>
+
+</html>

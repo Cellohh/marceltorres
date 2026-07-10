@@ -6,12 +6,12 @@
         "opsz" 24;
 }
 
-.role-card:hover .overlay {
+.book-card:hover .overlay {
     opacity: 1;
 }
 
 .grain-bg {
-    background-image: url("/images/actor/bgActor.jpg");
+    background-image: url("/images/author/bgAuthor.jpg");
     filter: contrast(150%) brightness(1000%);
     opacity: 0.05;
     pointer-events: none;
